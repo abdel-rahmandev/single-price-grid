@@ -1,0 +1,144 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+main {
+    padding: 30px;
+    background-color: hsl(206deg 47% 93%);
+}
+.card {
+    margin: 100px auto;
+    width: 650px;
+    max-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px -10px hsl(218deg 15% 32%);
+}
+.intro {
+    padding: 40px;
+    background-color: #fff;
+}
+.intro h1 {
+    color: hsl(179, 53%, 47%);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.intro h2 {
+    font-size: 18px;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.intro > p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* width: 100%; */
+}
+.month-sub {
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+    padding: 40px;
+}
+.month-sub h3 {
+    margin-bottom: 20px;
+}
+.price {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.price span:nth-child(1) {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.price span:nth-child(2) {
+    color: hsl(179, 62%, 73%);
+    font-weight: 400;
+}
+.month-sub p {
+    color: hsl(179, 62%, 92%);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.month-sub button {
+    border: none;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1em;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px hsl(240deg 5% 55%);
+}
+
+.why-us {
+    padding: 40px;
+    color: #fff;
+    background-color: hsl(179, 62%, 47%);
+}
+.why-us h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.why-us ul {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(179, 62%, 92%);
+}
+.why-us ul li {
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .card {
+        margin: 50px auto;
+    }
+    .intro, .month-sub, .why-us {
+        padding: 25px;
+    }
+}
+footer {
+  text-align: center;
+  min-height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 14px;
+}
+footer span {
+  padding: 5px;
+  color: hsl(179, 62%, 23%);
+}
+footer span:first-child {
+  margin-left: -5px;
+}
+footer a {
+  color: hsl(179, 62%, 43%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: hsl(179, 62%, 63%);
+}
